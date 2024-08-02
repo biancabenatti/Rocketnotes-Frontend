@@ -62,6 +62,19 @@ function handleRemoveTag(tagDeleted) {
 // FUNÇOES NOTAS ADD E REMOVE
 
 async function handleNewNote() {
+  if (!title){
+    return alert("Digite o título da nota")
+  }
+
+  if (newLink){
+    return alert("Você deixou um link no campo para adicionar. Clique para adicionar ou deixe vazio.")
+  }
+  
+  if (newTag){
+    return alert("Você deixou uma tag no campo para adicionar. Clique para adicionar ou deixe vazio.")
+  }
+
+
   await api.post('/notes', { // Aguardar a api enviar pelo metodo post em /notes {os objetos que quero mandar}
     title,
     description,
