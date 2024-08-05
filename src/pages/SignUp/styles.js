@@ -10,19 +10,15 @@ export const Container = styled.div`
 
 export const Form = styled.form`
   padding: 0 136px;
-
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-
-  text-align: center;
 
   > h1 {
     font-size: 48px;
     color: ${({ theme }) => theme.COLORS.ORANGE};
   }
-
   > h2 {
     font-size: 24px;
     margin: 48px 0;
@@ -34,8 +30,9 @@ export const Form = styled.form`
   }
 
   > a {
-    margin-top: 124px;
     color: ${({ theme }) => theme.COLORS.ORANGE};
+    font-size: 16px;
+    margin-top: 50px;
   }
 `
 
@@ -43,5 +40,4 @@ export const Background = styled.div`
   flex: 1;
   background: url(${backgroundImg}) no-repeat center center;
   background-size: cover;
-  opacity: 30%;
 `
