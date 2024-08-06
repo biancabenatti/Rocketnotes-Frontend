@@ -5,7 +5,7 @@ import{useState} from "react"
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
-import { Container, Form, Background } from './styles'
+import { Container, Form } from './styles'
 
 import {api} from "../../services/api"
 
@@ -38,7 +38,6 @@ export function SignUp() {
       
   return (
     <Container>
-      <Background />
 
       <Form>
         <h1>Rocket Notes</h1>
